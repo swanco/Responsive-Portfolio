@@ -96,6 +96,41 @@ main{
     grid-area:job3;
 }
 
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    img{
+        width:100%;
+        border:3px #fff solid;
+
+        &:hover{
+            opacity: 0.6;
+            border: 5px $secondary-color solid;
+        }
+    }
+}
+
+//buttons
+.btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding:1rem;
+    &:hover{
+     background: $secondary-color;
+     color:white;
+    }
+}
+.btn-light{
+background: #fff;
+color: black;
+}
+.btn-dark{
+background: black;
+color:white;
+}
+
 #main-footer{
     background: darken($primary-color,10);
     padding:0.5rem;
