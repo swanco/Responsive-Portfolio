@@ -30,3 +30,91 @@
         }
     }
 }
+
+.menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    visibility :hidden;
+    
+
+    &.show{
+        visibility: visible;
+    }
+
+    &-brand, &-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height:100vh;
+        float: left;
+        overflow: hidden;
+    }
+    &-nav{
+        margin: 0;
+        padding: 0;
+        background: darken($primary-color,5);
+        list-style: none;
+        transform: translate3d(0,-100%,0);
+        @include easeOut;
+    
+        &.show{
+            transform: translate3d(0,0,0);
+        }
+    }
+
+    &-brand{
+        background:darken($primary-color,10);
+        transform: translate3d(0,100%,0);
+        @include easeOut;
+    
+        &.show{
+            transform: translate3d(0,0,0);
+        }
+        .photo{
+            width:250px;
+            height:250px;
+            background-image: url(/dist/Images/Face.jpg);
+            border-radius: 50%;
+            border: solid 2px $secondary-color;
+            background-size: cover;
+            z-index: 3;
+        }
+    }
+    .nav-item{
+        transform: translate3d(700px,0,0);
+        @include easeOut;
+
+        &.current>a{
+             color: $secondary-color;            
+        }
+        &.show{
+            transform: translate3d(0,0,0);
+        }
+    }
+    
+    .nav-link{
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding: 1rem 0;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 300;
+        @include easeOut;
+
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+   
+}
+@for $x from 1 to 4 {
+    .nav-item:nth-child(#{$x}){
+        transition-delay: $x * 0.1s;
+    }
+}
