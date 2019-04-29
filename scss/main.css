@@ -466,12 +466,24 @@ main#home h1 {
 }
 
 @media screen and (max-width: 500px) {
+  .lg-heading {
+    font-weight: 100;
+  }
   .projects {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
   main#home h1 {
     margin-top: 10vh;
+    font-size: 5rem;
+  }
+  main#projects-page h1 {
+    margin-top: 10vh;
+    font-size: 5rem;
+  }
+  main#contact h1 {
+    margin-top: 10vh;
+    font-size: 5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
