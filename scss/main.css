@@ -468,19 +468,19 @@ main#home h1 {
   }
   main#home h1 {
     margin-top: 10vh;
-    font-size: 3rem;
+    font-size: 4rem;
   }
   main#about h1 {
     margin-top: 10vh;
-    font-size: 5rem;
+    font-size: 4rem;
   }
   main#projects-page h1 {
     margin-top: 10vh;
-    font-size: 5rem;
+    font-size: 4rem;
   }
   main#contact h1 {
     margin-top: 10vh;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -498,15 +498,15 @@ main#home h1 {
   }
   main#about h1 {
     margin-top: 10vh;
-    font-size: 5rem;
+    font-size: 3rem;
   }
   main#projects-page h1 {
     margin-top: 10vh;
-    font-size: 5rem;
+    font-size: 3rem;
   }
   main#contact h1 {
     margin-top: 10vh;
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
