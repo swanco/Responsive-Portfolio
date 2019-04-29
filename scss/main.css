@@ -376,7 +376,7 @@ main#home h1 {
 .animated {
   margin: 0;
   padding: 0;
-  background: url(/dist/Images/seamless-colorful-diagonal-stripes-pattern-vector.jpg);
+  background: url(../Images/seamless-colorful-diagonal-stripes-pattern-vector.jpg);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
