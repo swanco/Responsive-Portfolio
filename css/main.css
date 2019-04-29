@@ -56,7 +56,7 @@
     .menu-brand .photo {
       width: 250px;
       height: 250px;
-      background-image: url(../dist/Images/Face.jpg);
+      background-image: url(dist/Images/Face.jpg);
       border-radius: 50%;
       border: solid 2px #e44d;
       background-size: cover;
