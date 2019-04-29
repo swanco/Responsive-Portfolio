@@ -56,7 +56,7 @@
     .menu-brand .photo {
       width: 250px;
       height: 250px;
-      background-image: url(/dist/Images/Face.jpg);
+      background-image: url(/dist/Images/Face.JPG);
       border-radius: 50%;
       border: solid 2px #e44d;
       background-size: cover;
@@ -94,29 +94,20 @@
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: black;
   color: #fff;
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(/dist/Images/Header1.jpg);
+    background: black;
     background-attachment: fixed;
     background-size: cover; }
-    body#bg-img:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: rgba(68, 68, 68, 0.92);
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
 
 h1, h2, h3 {
   margin: 0;
-  font-weight: 200; }
+  font-weight: 600; }
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 6rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
@@ -189,7 +180,8 @@ main {
   grid-gap: 1rem; }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    border: 3px #fff solid;
+    height: 40vh; }
     .projects img:hover {
       opacity: 0.6;
       border: 5px #e44d solid; }
@@ -239,6 +231,22 @@ main {
   padding: 0.5rem;
   text-align: center;
   height: 60px; }
+
+.animated {
+  margin: 0;
+  padding: 0;
+  background: url(/dist/Images/seamless-colorful-diagonal-stripes-pattern-vector.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveBg 12s linear  infinite;
+  -webkit-animation: moveBg 12s linear  infinite; }
+
+@keyframes moveBg {
+  0% {
+    background-position: 0% 30%; }
+  100% {
+    background-position: 100% 50%; } }
 
 @media screen and (min-width: 1048px) {
   .projects {

@@ -6,7 +6,7 @@
 }
 body{
     @include bg();
-    background: $primary-color;
+    background: black;
     color: #fff;
     height: 100%;
     margin: 0;
@@ -15,7 +15,7 @@ body{
 }
 h1,h2,h3{
     margin: 0;
-    font-weight: 200;
+    font-weight: 600;
 
     &.lg-heading{
         font-size: 6rem;
@@ -104,7 +104,7 @@ main{
     img{
         width:100%;
         border:3px #fff solid;
-        
+        height:40vh;
         &:hover{
             opacity: 0.6;
             border: 5px $secondary-color solid;
@@ -171,5 +171,24 @@ color:white;
     height: 60px;
 }
 
-
+//animation
+.animated{
+  
+    margin: 0;
+    padding:0;
+    background: url(/dist/Images/seamless-colorful-diagonal-stripes-pattern-vector.jpg);
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color:transparent;
+    animation: moveBg 12s linear  infinite ;
+    -webkit-animation: moveBg 12s linear  infinite ;
+}
+@keyframes moveBg{
+    0%{
+        background-position: 0% 30%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
 @import 'mobile';
