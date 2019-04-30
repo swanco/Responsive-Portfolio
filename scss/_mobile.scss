@@ -80,7 +80,13 @@
 }
 //small screens
 @include mediaSm{
+    main#projects-page h2{
+        font-size: 1.2rem;
+    }
 
+    .bio p{
+        font-size: 1rem;
+    }
     .lg-heading{
         
         font-weight:100;
